@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greek Mythology Quiz</title> 
+</head>
+</html>
+<body>
+    <h1>Greek Mythology Quiz </h1>
+    <br>
+    <img src = ppphoto.jpg style ="width:150px;height:150px;">
+    <br>
+    Question 1: What did Persephone eat that got her trapped in the <br>
+    Underworld for half the year?
+    <br>
+    <p>
+        <div>
+        <input type="radio" name = "theFruit" id = "wrongOne" value="aBanana">A banana<br>
+        <input type="radio" name = "theFruit" id = "wrongTwo" value="anApple">An apple<br>
+        <input type="radio" name = "theFruit" id = "answer" value="aPomegranate">A pomegranate<br>
+        <input type="radio" name = "theFruit" id = "wrongThree" value="anOrange">An orange<br>
+        </div>
+    </p>
+<input type = "button" value = "Enter" onclick = correctAnswer()>
+<h2 id = "fff"></h2>
+<script>
+    function correctAnswer() {
+        const answerTrTwo = document.getElementById("fff");
+        const answerTr = document.getElementById("answer");
+        const answerTr1 = document.getElementById("wrongOne");
+        const answerTr2 = document.getElementById("wrongTwo");
+        const answerTr3 = document.getElementById("wrongThree");
+
+        if (answerTr.checked) {
+            answerTrTwo.innerText = "Correct";
+        }else{
+            answerTrTwo.innerText = "Incorrect";
+        }
+    }
+</script>
+
+</body>
